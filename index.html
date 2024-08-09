@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Service Center</title>
+    <style>
+        body {
+            background-color: #fff700; /* Yellow background */
+            color: #000000; /* Black text */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000000; /* Black header */
+            color: #fff700; /* Yellow text */
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .container {
+            margin: 50px auto;
+            width: 50%;
+            background-color: #fff700;
+            padding: 20px;
+            border: 2px solid #000000; /* Black border */
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-size: 1.2em;
+        }
+        select, input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #000000; /* Black border */
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        input[type="submit"] {
+            background-color: #000000; /* Black button */
+            color: #fff700; /* Yellow text */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 20px;
+            display: block;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #333333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Welcome to Classic Service Center
+    </header>
+
+    <div class="container">
+        <form>
+            <label for="machine">Select Machine:</label>
+            <select id="machine" name="machine">
+                <option value="Excavator_1">Excavator_1</option>
+                <option value="Articulated_Truck_1">Articulated_Truck_1</option>
+                <option value="Backhoe_Loader_1">Backhoe_Loader_1</option>
+                <option value="Dozer_1">Dozer_1</option>
+                <option value="Asphalt_Paver_1">Asphalt_Paver_1</option>
+            </select>
+
+            <label for="component">Select Component:</label>
+            <select id="component" name="component">
+                <option value="Engine">Engine</option>
+                <option value="Fuel">Fuel</option>
+                <option value="Drive">Drive</option>
+                <option value="Misc">Misc</option>
+            </select>
+
+            <label for="parameter">Select Parameter:</label>
+            <select id="parameter" name="parameter">
+                <option value="Transmission Pressure">Transmission Pressure</option>
+                <option value="Speed">Speed</option>
+                <option value="Water in Fuel">Water in Fuel</option>
+                <option value="Brake Control">Brake Control</option>
+                <option value="Temperature">Temperature</option>
+                <option value="Pressure">Pressure</option>
+                <option value="Oil Pressure">Oil Pressure</option>
+                <option value="Pedal Sensor">Pedal Sensor</option>
+                <option value="Exhaust Gas Temperature">Exhaust Gas Temperature</option>
+                <option value="Level">Level</option>
+                <option value="Air Filter Pressure">Air Filter Pressure</option>
+                <option value="System Voltage">System Voltage</option>
+                <option value="Hydraulic Pump Rate">Hydraulic Pump Rate</option>
+            </select>
+
+            <label for="value">Enter Value:</label>
+            <input type="text" id="value" name="value" placeholder="Enter value (integer or decimal)">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>
